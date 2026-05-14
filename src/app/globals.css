@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,166 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+} */
+
+
+@import "tailwindcss";
+
+/* ─── Fonts ──────────────────────────────────────────────────── */
+/* DM Sans loaded via layout.tsx <head> link */
+
+/* ─── CSS Variables ──────────────────────────────────────────── */
+:root {
+  --bg: #000000;
+  --surface: rgba(255, 255, 255, 0.03);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-blue: rgba(59, 130, 246, 0.2);
+  --accent: #3b82f6;
+  --accent-dark: #1d4ed8;
+  --accent-glow: rgba(59, 130, 246, 0.35);
+  --text: #f1f5f9;
+  --text-muted: rgba(255, 255, 255, 0.45);
+  --text-dim: rgba(255, 255, 255, 0.2);
+  --font-sans: 'DM Sans', var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+/* ─── Reset ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+/* Lenis handles smooth scroll */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  /* No cursor:none here — FluidCursor is pointer-events:none so system cursor still works */
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* ─── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: rgba(59, 130, 246, 0.25);
+  color: #fff;
+}
+
+/* ─── Placeholder ───────────────────────────────────────────── */
+::placeholder {
+  color: rgba(255, 255, 255, 0.22);
+}
+
+/* ─── Typography ────────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.03em;
+}
+
+/* ─── Utility: input ────────────────────────────────────────── */
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
+}
+
+/* ─── Utility: glass card ───────────────────────────────────── */
+.glass {
+  background: rgba(5, 12, 28, 0.65);
+  border: 1px solid var(--border-blue);
+  backdrop-filter: blur(20px);
+}
+
+/* ─── Utility: glow classes ─────────────────────────────────── */
+.glow-blue {
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.35), 0 0 60px rgba(59, 130, 246, 0.12);
+}
+
+.text-glow {
+  text-shadow: 0 0 24px rgba(59, 130, 246, 0.5);
+}
+
+/* ─── Animations ────────────────────────────────────────────── */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
 }
