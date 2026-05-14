@@ -80,6 +80,7 @@
 export const dynamic = "force-dynamic";
 import { supabase } from "@/lib/supabase";
 import DashboardUI from "./DashboardUI";
+///its a change here
 
 export default async function Dashboard() {
     const { data: projects } = await supabase.from("projects").select("*");
