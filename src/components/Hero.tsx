@@ -682,7 +682,7 @@ export default function Hero() {
                 >
                     {/* Card shell */}
                     <div style={{
-                        borderRadius: 24, padding: "32px",
+                        borderRadius: 24, padding: "20px",
                         background: "rgba(5,12,28,0.75)",
                         border: "1px solid rgba(34,211,238,0.14)",
                         backdropFilter: "blur(28px)",

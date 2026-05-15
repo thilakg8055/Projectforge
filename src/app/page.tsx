@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { supabase } from "@/lib/supabase";
 import ReadyProjects from "@/components/ReadyProjects";
 import Hero from "@/components/Hero";
