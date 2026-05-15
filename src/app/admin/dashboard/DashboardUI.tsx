@@ -680,7 +680,7 @@
 // }
 
 "use client";
-
+export const dynamic = "force-dynamic";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
