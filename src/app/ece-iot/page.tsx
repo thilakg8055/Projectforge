@@ -9,7 +9,7 @@
 //     );
 // }
 
-
+export const dynamic = "force-dynamic"
 import { supabase } from "@/lib/supabase";
 import BranchPageUI from "@/components/BranchPageUI";
 import Navbar from "@/components/Navbar";
