@@ -313,7 +313,7 @@
 
 
 "use client";
-
+export const dynamic = "force-dynamic";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
