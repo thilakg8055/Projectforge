@@ -809,7 +809,7 @@ export default function DashboardUI({ projects, inquiries }: any) {
                             fontSize: 11, fontWeight: 600, letterSpacing: "2.5px",
                             textTransform: "uppercase", color: "#22d3ee",
                             fontFamily: "var(--font-geist-mono)", marginBottom: 10,
-                        }}>ProjectForge · Admin</p>
+                        }}>Projixio · Admin</p>
                         <h1 style={{
                             fontSize: "clamp(28px,4vw,42px)", fontWeight: 900,
                             letterSpacing: "-1.5px", lineHeight: 1.05,

@@ -223,7 +223,7 @@ export default function Navbar() {
                             background: "linear-gradient(90deg,#22d3ee,#10b981)",
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                             fontFamily: "var(--font-geist-sans)",
-                        }}>ProjectForge</span>
+                        }}>Projixio</span>
                     </motion.div>
                 </Link>
 

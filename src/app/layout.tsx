@@ -113,7 +113,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ProjectForge — Engineering Projects",
+  title: "Projixio — Engineering Projects",
   description: "Ready-made and custom engineering projects for students",
 };
 

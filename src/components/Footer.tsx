@@ -237,7 +237,7 @@ export default function Footer() {
                             background: "linear-gradient(90deg,#22d3ee,#10b981)",
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                             fontFamily: "var(--font-geist-sans)",
-                        }}>ProjectForge</span>
+                        }}>Projixio</span>
                     </div>
 
                     <p style={{
@@ -388,7 +388,7 @@ export default function Footer() {
                         fontSize: 11, color: "rgba(255,255,255,0.18)",
                         fontFamily: "var(--font-geist-sans)",
                     }}>
-                        © {new Date().getFullYear()} ProjectForge. Built with ❤️ for engineering students.
+                        © {new Date().getFullYear()} Projixio. Built with ❤️ for engineering students.
                     </p>
 
                     {/* Tiny top-link */}

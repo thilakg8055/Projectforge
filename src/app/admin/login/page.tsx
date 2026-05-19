@@ -125,7 +125,7 @@ export default function AdminLogin() {
                         fontSize: 11, fontWeight: 600, letterSpacing: "2.5px",
                         textTransform: "uppercase", color: "#22d3ee",
                         fontFamily: "var(--font-geist-mono)", marginBottom: 8,
-                    }}>ProjectForge · Admin</p>
+                    }}>Projixio · Admin</p>
 
                     <h1 style={{
                         fontSize: 28, fontWeight: 900, letterSpacing: "-0.8px",
