@@ -224,7 +224,7 @@ export default function Footer() {
                 {/* Brand col */}
                 <div>
                     {/* Logo */}
-                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
+                    {/* <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
                         <div style={{
                             width: 32, height: 32, borderRadius: 10, flexShrink: 0,
                             background: "linear-gradient(135deg,#06b6d4,#10b981)",
@@ -238,6 +238,34 @@ export default function Footer() {
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                             fontFamily: "var(--font-geist-sans)",
                         }}>Projixio</span>
+                    </div> */}
+
+                    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
+                        <div style={{
+                            width: 52, height: 52, flexShrink: 0,
+                            transform: "scale(1.5)", transformOrigin: "left",
+                        }}>
+                            <img
+                                src="/favicon.ico"
+                                alt="Projixio Logo"
+                                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                            />
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
+                            <span style={{
+                                fontSize: 16, fontWeight: 800, letterSpacing: "-0.4px",
+                                background: "linear-gradient(90deg,#22d3ee,#10b981)",
+                                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                                fontFamily: "var(--font-geist-sans)",
+                                lineHeight: 1.1,
+                            }}>Projixio</span>
+                            <span style={{
+                                fontSize: 5, fontWeight: 300, letterSpacing: "2px",
+                                color: "#22d3ee", opacity: 0.75,
+                                fontFamily: "var(--font-geist-sans)",
+                                lineHeight: 1.1,
+                            }}>SINCE 2026</span>
+                        </div>
                     </div>
 
                     <p style={{

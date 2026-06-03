@@ -210,20 +210,56 @@ export default function Navbar() {
                         whileTap={{ scale: 0.97 }}
                         style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}
                     >
-                        <div style={{
+                        {/* <div style={{
                             width: 32, height: 32, borderRadius: 10,
                             background: "linear-gradient(135deg,#06b6d4,#10b981)",
                             boxShadow: "0 0 18px rgba(6,182,212,0.55)",
                             display: "flex", alignItems: "center", justifyContent: "center",
                             fontSize: 15, flexShrink: 0,
-                        }}>⚙</div>
+                        }}>⚙</div> */}
+                        <div
+                            style={{
+                                width: 52,
+                                height: 52,
+                                flexShrink: 0,
+                                transform: "scale(1.5)",
+                                transformOrigin: "left",
+                            }}
+                        >
+                            <img
+                                src="/favicon.ico"
+                                alt="Projixio Logo"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "contain",
+                                }}
+                            />
+                        </div>
 
-                        <span style={{
+                        {/* <span style={{
                             fontSize: 16, fontWeight: 800, letterSpacing: "-0.4px",
                             background: "linear-gradient(90deg,#22d3ee,#10b981)",
                             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                             fontFamily: "var(--font-geist-sans)",
-                        }}>Projixio</span>
+                        }}>Projixio</span> */}
+
+                        <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
+                            <span style={{
+                                fontSize: 16, fontWeight: 800, letterSpacing: "-0.4px",
+                                background: "linear-gradient(90deg,#22d3ee,#10b981)",
+                                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                                fontFamily: "var(--font-geist-sans)",
+                                lineHeight: 1.1,
+                            }}>Projixio</span>
+                            <span style={{
+                                fontSize: 5, fontWeight: 300, letterSpacing: "2px",
+                                color: "#22d3ee",
+                                fontFamily: "var(--font-geist-sans)",
+                                opacity: 0.75,
+                                lineHeight: 1.1,
+                            }}>SINCE 2026</span>
+                        </div>
                     </motion.div>
                 </Link>
 
