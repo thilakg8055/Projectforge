@@ -156,7 +156,7 @@
 
 
 import Link from "next/link";
-
+import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 const NAV_LINKS = [
     { href: "/cse", label: "CSE / AI" },
     { href: "/ece-iot", label: "ECE / IoT" },
@@ -166,16 +166,16 @@ const NAV_LINKS = [
 ];
 
 const SOCIALS = [
-    { label: "WhatsApp", icon: "💬", href: "https://wa.me/919901096221?text=Hi%20I%20want%20to%20know%20about%20your%20projects" },
-    // { label: "Instagram", icon: "📸", href: "#" },
-    { label: "LinkedIn", icon: "💼", href: "linkedin.com/in/thilak-g-8a1235322" },
+    { label: "WhatsApp", icon: <FaWhatsapp />, href: "https://wa.me/919901096221?text=Hi%20I%20want%20to%20know%20about%20your%20projects" },
+    { label: "Instagram", icon: <FaInstagram />, href: "https://www.instagram.com/projixio/" },
+    { label: "LinkedIn", icon: <FaLinkedin />, href: "https://www.linkedin.com/in/thilak-g-8a1235322/" },
 ];
 
 const TRUST = [
     { icon: "⚡", text: "Delivered in 24–72h" },
     { icon: "🔒", text: "100% original code" },
     { icon: "📞", text: "Free setup support" },
-    { icon: "🎓", text: "50+ students served" },
+    // { icon: "🎓", text: "50+ students served" },
 ];
 
 export default function Footer() {
@@ -354,7 +354,7 @@ export default function Footer() {
                 </div>
 
                 {/* Contact col */}
-                <div>
+                {/* <div>
                     <p style={{
                         fontSize: 11, fontWeight: 600, letterSpacing: "2px",
                         textTransform: "uppercase", color: "rgba(255,255,255,0.2)",
@@ -386,6 +386,100 @@ export default function Footer() {
                             style={{
                                 textAlign: "center", padding: "11px 0",
                                 borderRadius: 11, fontSize: 12, fontWeight: 700,
+                                background: "linear-gradient(135deg,#06b6d4,#10b981)",
+                                color: "#000",
+                                fontFamily: "var(--font-geist-sans)",
+                                cursor: "pointer",
+                                boxShadow: "0 0 20px rgba(34,211,238,0.2)",
+                                transition: "box-shadow 0.2s",
+                            }}
+                            onMouseEnter={e => ((e.currentTarget as HTMLElement).style.boxShadow = "0 0 32px rgba(34,211,238,0.45)")}
+                            onMouseLeave={e => ((e.currentTarget as HTMLElement).style.boxShadow = "0 0 20px rgba(34,211,238,0.2)")}
+                        >
+                            Get Free Quote →
+                        </div>
+                    </Link>
+                </div> */}
+                {/* Contact col */}
+                <div>
+                    <p style={{
+                        fontSize: 11, fontWeight: 600, letterSpacing: "2px",
+                        textTransform: "uppercase", color: "rgba(255,255,255,0.2)",
+                        fontFamily: "var(--font-geist-mono)",
+                        marginBottom: 20,
+                    }}>Contact</p>
+
+                    <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
+                        {[
+                            {
+                                icon: "📧",
+                                text: "Projixio@gmail.com",
+                                href: "mailto:Projixio@gmail.com",
+                            },
+                            {
+                                icon: "📱",
+                                text: "+91 9901096221",
+                                href: "tel:+919901096221",
+                            },
+                            {
+                                icon: "📱",
+                                text: "+91 8050586103",
+                                href: "tel:+918050586103",
+                            },
+                        ].map(({ icon, text, href }) => (
+                            <a
+                                key={text}
+                                href={href}
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 10,
+                                    padding: "10px 14px",
+                                    borderRadius: 11,
+                                    background: "rgba(255,255,255,0.03)",
+                                    border: "1px solid rgba(255,255,255,0.06)",
+                                    fontSize: 12,
+                                    color: "rgba(255,255,255,0.75)",
+                                    fontFamily: "var(--font-geist-sans)",
+                                    textDecoration: "none",
+                                    transition: "all 0.2s ease",
+                                }}
+                                onMouseEnter={(e) => {
+                                    (e.currentTarget as HTMLElement).style.background =
+                                        "rgba(255,255,255,0.06)";
+                                    (e.currentTarget as HTMLElement).style.border =
+                                        "1px solid rgba(34,211,238,0.35)";
+                                }}
+                                onMouseLeave={(e) => {
+                                    (e.currentTarget as HTMLElement).style.background =
+                                        "rgba(255,255,255,0.03)";
+                                    (e.currentTarget as HTMLElement).style.border =
+                                        "1px solid rgba(255,255,255,0.06)";
+                                }}
+                            >
+                                <span style={{ fontSize: 14, flexShrink: 0 }}>{icon}</span>
+
+                                <span
+                                    style={{
+                                        overflow: "hidden",
+                                        textOverflow: "ellipsis",
+                                        whiteSpace: "nowrap",
+                                    }}
+                                >
+                                    {text}
+                                </span>
+                            </a>
+                        ))}
+                    </div>
+
+                    <Link href="/contact" style={{ textDecoration: "none", display: "block" }}>
+                        <div
+                            style={{
+                                textAlign: "center",
+                                padding: "11px 0",
+                                borderRadius: 11,
+                                fontSize: 12,
+                                fontWeight: 700,
                                 background: "linear-gradient(135deg,#06b6d4,#10b981)",
                                 color: "#000",
                                 fontFamily: "var(--font-geist-sans)",
