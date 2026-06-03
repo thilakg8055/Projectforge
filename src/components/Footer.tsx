@@ -423,8 +423,8 @@ export default function Footer() {
                             },
                             {
                                 icon: "📱",
-                                text: "+91 8050586103",
-                                href: "tel:+918050586103",
+                                text: "+91 7975094290",
+                                href: "tel:+917975094290",
                             },
                         ].map(({ icon, text, href }) => (
                             <a
