@@ -157,6 +157,7 @@ const links = [
     { href: "/ds-ml", label: "DS / ML" },
     { href: "/robotics", label: "Robotics" },
     { href: "/projects", label: "Projects" },
+    { href: "/about", label: "About" },
     // { href: "/contact", label: "Contact" },
 ];
 

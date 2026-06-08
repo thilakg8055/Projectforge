@@ -507,7 +507,7 @@ export default function Footer() {
                     alignItems: "center", flexWrap: "wrap", gap: 12,
                 }}>
                     <p style={{
-                        fontSize: 11, color: "rgba(255,255,255,0.18)",
+                        fontSize: 11, color: "rgba(255, 255, 255, 0.18)",
                         fontFamily: "var(--font-geist-sans)",
                     }}>
                         © {new Date().getFullYear()} Projixio. Built with ❤️ for engineering students.
