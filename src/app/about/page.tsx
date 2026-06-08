@@ -583,13 +583,13 @@ export default function AboutPage() {
                 </motion.div>
 
                 {/* Photo placeholder notice */}
-                <p style={{
+                {/* <p style={{
                     textAlign: "center", marginTop: 32,
                     fontSize: 11, color: "rgba(255,255,255,0.15)",
                     fontFamily: "var(--font-geist-mono)",
                 }}>
                     📸 Add team photos at <code style={{ color: "rgba(34,211,238,0.4)" }}>public/team/lohith.jpg</code>, <code style={{ color: "rgba(34,211,238,0.4)" }}>thilak.jpg</code>, <code style={{ color: "rgba(34,211,238,0.4)" }}>hari.jpg</code>
-                </p>
+                </p> */}
 
                 <style>{`
         @media (max-width: 900px) {
