@@ -49,7 +49,7 @@ const TEAM = [
     {
         num: "03",
         name: "JP HariKrishna Raj",
-        role: "Electronics Projects Expert smt",
+        role: "Electronics Projects Expert",
         photo: "/team/hari.jpg",        // place photo at public/team/hari.jpg
         accent: "#a78bfa",
         glow: "rgba(167,139,250,0.15)",
@@ -58,9 +58,9 @@ const TEAM = [
         tags: ["Arduino", "Raspberry Pi", "ESP32", "Embedded C"],
         skills: [
             { icon: "📡", label: "ECE & IoT Projects" },
-            { icon: "🔌", label: "Arduino · NodeMCU" },
+            { icon: "📶", label: "Wireless Communication" },
             { icon: "⚙️", label: "Embedded Systems" },
-            { icon: "🖥️", label: "Raspberry Pi" },
+            { icon: "🖥️", label: "Industry Level Projects" },
             // { icon: "🎓", label: "B.Tech ECE" },
         ],
         desc: "Hands-on hardware and IoT engineer with extensive experience delivering real embedded projects — from smart devices to robotics and automation.",
