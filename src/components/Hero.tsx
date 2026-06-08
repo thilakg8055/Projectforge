@@ -640,7 +640,7 @@ export default function Hero() {
                         {[
                             { to: 50, suffix: "+", label: "Students" },
                             { to: 30, suffix: "+", label: "Projects" },
-                            { to: 2, suffix: "", label: "Founders" },
+                            { to: 3, suffix: "", label: "Founders" },
                             { to: 100, suffix: "%", label: "Delivered" },
                         ].map((s, i) => (
                             <div key={i} style={{

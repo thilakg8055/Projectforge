@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { label } from "framer-motion/client";
 // ─── Team data ────────────────────────────────────────────────────────────────
 const TEAM = [
     {
@@ -20,9 +21,11 @@ const TEAM = [
             { icon: "⚛️", label: "React Expert" },
             { icon: "🌐", label: "JS Projects" },
             { icon: "📄", label: "IEEE Paper & Report Mgmt" },
-            { icon: "🎓", label: "B.Tech CSE" },
+            { icon: "💡", label: "SEO optimization" },
+            // { icon: "🎓", label: "B.Tech CSE" },
         ],
         desc: "Frontend-focused web developer with deep React expertise. Handles all JS-heavy projects and manages IEEE paper preparation and documentation.",
+        highlight: true,
     },
     {
         num: "02",
@@ -46,20 +49,22 @@ const TEAM = [
     {
         num: "03",
         name: "JP HariKrishna Raj",
-        role: "ECE & IoT Engineer",
+        role: "Electronics Projects Expert smt",
         photo: "/team/hari.jpg",        // place photo at public/team/hari.jpg
         accent: "#a78bfa",
         glow: "rgba(167,139,250,0.15)",
         bg: "rgba(167,139,250,0.07)",
         degree: "B.Tech ECE",
-        tags: ["Arduino", "NodeMCU", "IoT", "Embedded C"],
+        tags: ["Arduino", "Raspberry Pi", "ESP32", "Embedded C"],
         skills: [
             { icon: "📡", label: "ECE & IoT Projects" },
             { icon: "🔌", label: "Arduino · NodeMCU" },
             { icon: "⚙️", label: "Embedded Systems" },
-            { icon: "🎓", label: "B.Tech ECE" },
+            { icon: "🖥️", label: "Raspberry Pi" },
+            // { icon: "🎓", label: "B.Tech ECE" },
         ],
         desc: "Hands-on hardware and IoT engineer with extensive experience delivering real embedded projects — from smart devices to robotics and automation.",
+        highlight: true,
     },
 ];
 
@@ -452,7 +457,7 @@ export default function AboutPage() {
                                 background: "linear-gradient(120deg,#22d3ee 0%,#10b981 50%,#a78bfa 100%)",
                                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
                                 filter: "drop-shadow(0 0 28px rgba(34,211,238,0.3))",
-                            }}>ProjectForge</span>
+                            }}>Projixio</span>
                         </motion.h1>
                     </div>
 
