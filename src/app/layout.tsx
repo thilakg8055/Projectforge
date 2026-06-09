@@ -54,9 +54,7 @@ import FluidCursor from "@/components/FluidCursor";
 import Background from "@/components/Background";
 import Footer from "@/components/Footer";
 
-// Heavy visual components — client-only, lazy loaded
-// const Background = dynamic(() => import("@/components/Background"), { ssr: false });
-// const FluidCursor = dynamic(() => import("@/components/FluidCursor"), { ssr: false });
+
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
