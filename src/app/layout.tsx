@@ -117,8 +117,46 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 //   description: "Ready-made and custom engineering projects for students",
 // };
 
+// export const metadata: Metadata = {
+//   title: "Projixio | Engineering Projects for CSE, ECE, AI, IoT & Robotics",
+//   description:
+//     "Projixio provides ready-made and custom engineering projects for CSE, ECE, AI/ML, IoT, Robotics and Data Science students with code, report and setup support.",
+
+//   keywords: [
+//     "engineering projects",
+//     "cse projects",
+//     "ece projects",
+//     "iot projects",
+//     "aiml projects",
+//     "robotics projects",
+//     "final year projects",
+//     "mini projects",
+//     "IEEE projects",
+//     "Projixio",
+//   ],
+
+//   authors: [{ name: "Projixio" }],
+
+//   openGraph: {
+//     title: "Projixio",
+//     description:
+//       "Engineering projects for students with code, PPT, documentation and support.",
+//     url: "https://projixio.in",
+//     siteName: "Projixio",
+//     images: [
+//       {
+//         url: "/logo.png",
+//         width: 1200,
+//         height: 630,
+//       },
+//     ],
+//     type: "website",
+//   },
+// };
+
 export const metadata: Metadata = {
   title: "Projixio | Engineering Projects for CSE, ECE, AI, IoT & Robotics",
+
   description:
     "Projixio provides ready-made and custom engineering projects for CSE, ECE, AI/ML, IoT, Robotics and Data Science students with code, report and setup support.",
 
@@ -137,12 +175,23 @@ export const metadata: Metadata = {
 
   authors: [{ name: "Projixio" }],
 
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+
   openGraph: {
     title: "Projixio",
     description:
       "Engineering projects for students with code, PPT, documentation and support.",
     url: "https://projixio.in",
     siteName: "Projixio",
+
     images: [
       {
         url: "/logo.png",
@@ -150,6 +199,7 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
+
     type: "website",
   },
 };
